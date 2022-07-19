@@ -95,7 +95,6 @@ describe('Testando componente Pokedex', () => {
     expect(buttonAll).toBeInTheDocument();
 
     const buttonTestId = screen.getAllByTestId('pokemon-type-button');
-    // expect(buttonTestId).toBeInTheDocument();
     console.log(buttonTestId);
 
     userEvent.click(buttonAll);
