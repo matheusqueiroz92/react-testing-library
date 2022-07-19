@@ -79,8 +79,11 @@ describe('Teste do componente Pokemon', () => {
       </Router>,
     );
 
+    const typePokemon = screen.getByText('Electric');
+    console.log(typePokemon);
     const iconFavorite = screen.getByAltText('Pikachu is marked as favorite');
     expect(iconFavorite).toHaveAttribute('src', '/star-icon.svg');
     expect(iconFavorite).toBeInTheDocument();
+    expect(typePokemon).toBeInTheDocument();
   });
 });
