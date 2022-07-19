@@ -2,9 +2,7 @@ import React from 'react';
 import { screen, render } from '@testing-library/react';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
-// import userEvent from '@testing-library/user-event';
 import App from '../App';
-import userEvent from '@testing-library/user-event';
 import pokemons from '../data';
 import Pokemon from '../components/Pokemon';
 
